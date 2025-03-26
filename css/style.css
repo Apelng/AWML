@@ -1007,22 +1007,38 @@ back to top
 top panel
 
 ------------------------------------------- */
+
+
 .mil-top-panel {
   position: fixed;
   z-index: 998;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100px;
+  height: 90px;
   display: flex;
-  align-items: right;
-  background-color: #fff;
+  align-items: center;
   transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
+  background-color: #fff;
 }
+
 
 .mil-top-panel img{
 
-  width: 70%;
+  width: 30%;
+}
+
+@media (max-width: 992px) {
+  .mil-top-panel img {
+    width: 40%;
+
+}
+}
+@media (max-width: 768px) {
+  .mil-top-panel img {
+    width: 40%;
+
+}
 }
 .mil-top-panel .container {
   display: flex;
@@ -1038,31 +1054,17 @@ top panel
   background-color: rgb(255, 255, 255);
   height: 100px;
   box-shadow: 0 5px 10px rgba(13, 81, 82, 0.05);
- 
 }
 @media (max-width: 1200px) {
   .mil-top-panel {
     height: 80px;
     background-color: rgb(255, 255, 255);
-    color: #107b5f;
   }
   .mil-top-panel.mil-active {
     height: 80px;
   }
 }
 
-@media (max-width: 992px) {
-  .mil-top-panel img {
-    width: 40%;
-
-}
-}
-@media (max-width: 768px) {
-  .mil-top-panel img {
-    width: 40%;
-
-}
-}
 /* -------------------------------------------
 
 top menu
@@ -1070,16 +1072,16 @@ top menu
 ------------------------------------------- */
 .mil-top-menu ul {
   display: flex;
-  margin-left: 550px;
+  
 }
 .mil-top-menu ul li {
   list-style-type: none;
   margin-right: 15px;
   position: relative;
+
 }
 .mil-top-menu ul li:last-child {
   margin-right: 0;
-
 }
 .mil-top-menu ul li a {
   border-radius: 10px;
@@ -1107,12 +1109,10 @@ top menu
   bottom: 0;
   left: 15px;
   right: 15px;
-  background: #107b5f;
-
-  
+  background: #8abf42;
 }
 .mil-top-menu ul li a:hover {
-  color: #107b5f;
+  color: #8abf42;
 }
 .mil-top-menu ul li.mil-has-children > a {
   padding-right: 24px;
@@ -1127,12 +1127,10 @@ top menu
   margin-top: -1px;
 }
 .mil-top-menu ul li.mil-active > a {
-  color: #107b5f;
- 
+  color: #8abf42;
 }
 .mil-top-menu ul li.mil-active > a:before {
   opacity: 1;
-  margin-top: 1em;
 }
 .mil-top-menu ul li ul {
   pointer-events: none;
@@ -1174,6 +1172,9 @@ top menu
 .mil-top-panel.mil-active .mil-top-menu ul li:hover ul {
   border-radius: 0 0 10px 10px;
 }
+
+
+
 
 .mil-dark-1 .mil-top-menu ul li a {
   background-color: transparent;
