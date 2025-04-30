@@ -1,0 +1,12 @@
+@media (max-width: 992px) {
+    .mil-top-panel img {
+      width: 40%;
+  
+  }
+  }
+  @media (max-width: 768px) {
+    .mil-top-panel img {
+      width: 40%;
+  
+  }
+  }
